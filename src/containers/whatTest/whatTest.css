@@ -1,0 +1,90 @@
+.mars__whattest {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    background: var(--color-footer);
+    border-radius: 4rem 4rem 4rem 4rem;
+}
+
+.mars__whattest-feature {
+    display: flex;   
+}
+
+.mars__whattest-feature .mars__whattest-feature-container {
+    margin: 0;
+}
+
+.mars__whattest-feature .mars__whattest-feature-container-text {
+    margin: 700px;
+}
+
+.mars__whattest-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem 0 2 rem;
+}
+
+.mars__whattest-heading h1 {
+    font-family: var(--font-family);
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    max-width: 510px;
+}
+
+.mars__whattest-heading p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mars__whattest-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+    .mars__whattest-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .mars__whattest-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .mars__whattest-feature .mars__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .mars__whattest-feature .mars__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .mars__whattest-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .test-container .mars__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
